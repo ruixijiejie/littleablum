@@ -13,7 +13,7 @@ app.use(express.static("./uploads"));
 app.get("/", router.showIndex);
 app.get("/:albumName", router.showAlbum);
 app.get("/up", router.showUp);
-// app.post("/up", router.doPost);
+app.post("/up", router.doPost);
 
 // 404
 app.use(function (req, res) {
